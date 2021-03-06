@@ -3,8 +3,9 @@ package com.henfarm.mars.base.impl;
 /**
  * 
  * The Rover class represents a Mars rover which has the ability to process a
- * single command instruction to change direction by turning or move into a current
- * direction if safe to move (within boundaries of the Mars map provided by ControlTower)
+ * single command instruction to change direction by turning or move into a
+ * current direction if safe to move (within boundaries of the Mars map provided
+ * by ControlTower)
  * 
  * @author alexhenao
  *
@@ -41,7 +42,8 @@ public class Rover {
 
 	/**
 	 * Rover created with a location and direction along with connection to the Mars
-	 * control tower. Assumed that the (x,y) values will always been within the bounds given in the input file.
+	 * control tower. Assumed that the (x,y) values will always been within the
+	 * bounds given in the input file.
 	 * 
 	 * @param x            The x-axis coordinate of a rover.
 	 * @param y            The y-axis coordinate of a rover.
@@ -200,7 +202,6 @@ public class Rover {
 		int calcCoordinates[] = DIRECTION_MOVE_CALCS[directionIndex];
 
 		return this.setCoordinates(calcNewCoordinates(coordinates, calcCoordinates));
-
 	}
 
 	/**
