@@ -12,9 +12,7 @@ The first steps in designing the solution were to understand the problem. Rovers
 
 There is some notion of fleet command provided by a singleton class.
 
-Rovers should be able to process a single command.
-
- - Turn
+Rovers should be able to process a single command
 
 Rovers should only move if it's safe
 
@@ -56,9 +54,13 @@ The driving solution algorithm is pretty straight forward.
 
 The fun part of this problem was figuring how to map the directions and the corresponding calculations. For example if the Rover must move north then that means to add the current position (x,y) of the rover with the north movement coordinate map (0,1).
 
+## Running The Solution
+In the resources directory there exists:
 
+ 1. MarsRovers.jar
+ 2. inputFile.txt
+ 3. runSolution.sh
 
-
-
+Execute the runSolution.sh and see that the the application yields the expected output.
 
 ```
