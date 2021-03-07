@@ -73,3 +73,4 @@ Running the application is as easy as executing the .sh file.
 
     ./runSolution.sh
 
+If all three files are in the same directory the executible .sh file will run the application with the inputFile.txt data. 
