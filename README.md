@@ -52,7 +52,7 @@ The driving solution algorithm is pretty straight forward.
 
 The fun part of this problem was figuring how to map the directions and the corresponding calculations. For example if the Rover must move north then that means to add the current position (x,y) of the rover with the north movement coordinate map (0,1). This was achieved by storing an array with coordinates use for the move calculations and a corresponding array which maps to those coordinates by matching index (arrays of same size). 
 
-### Running The Solution
+# Running The Solution
 In the resources directory there exists:
 
  1. MarsRovers.jar - contains the compiled logic
