@@ -8,14 +8,11 @@ In this repo you'll find my first crack at implementing the Mars Rovers solution
 
 # Design
 
-The first steps in designing the solution were to understand the problem. Rovers need to be able to move within a grid where the upper bounds are provided in a text file. The information for the Rover instantiation and commands to execute are also provided in this same text file. 
+The first steps in designing the solution were to understand the problem and understand the basic features Rovers and ControlTower should have. Once some basic features were whiteboarded the algorithm to accomplish the calculations were devised. 
 
-There is some notion of fleet command provided by a singleton class.
+Most of the time in this project was spent whiteboarding the necessary classes, methods, and algorithms to fullfil the requirements. Unit tests were created before the logic was added to the core classes of the project.
 
-Rovers should be able to process a single command
-
-Rovers should only move if it's safe
-
+The unit tests allowed the implemenation phase to follow a direction/track to stay on and ensure that the different areas of the code had proepr coverage. Changes to the implementation made subtle changes apparent because tests which were passing began to fail. This again ensured that we would not lose functionality.
 
 ## Assumptions
 The application solutions assume that the data provided in the file is sound and structured as the problem describes. This assumption also includes that for every Rover data line in the input file there is a corresponding command data line.
@@ -25,7 +22,8 @@ The application holds these assumptions critically and in order to work the data
  2. The **inputFile.txt is formatted properly** as described in the problem description
  3. The **first line of the input will contain the boundary data** 
  4. The following set of lines will come in pairs such that **for every line of Rover information** there will be a corresponding line containing commands for the rover to execute.
- 5. The utility classes used in this application are assumed to work and were not designed to be tested.
+ 5. The inputFile.txt values will be within the boundary ranges provided by the first line of the input.
+ 6. The utility classes used in this application are assumed to work and were not designed to be tested.
 
 
 ## Objects
@@ -38,7 +36,7 @@ The objects which were designed to hold the Mars business logic are the followin
 
 **Rover** - this object has a direct link with the single control tower commanding the rover fleet. It's designed to process a single command at a time (L,R,M). It checks with the ControlTower before it completes an 'M' command to ensure it's safely moving within the boundaries.
 
-Along with each of the primary  objects exist corresponding test classes:
+Along with each of the primary  objects exist corresponding test classes which can be run as JUNIT applications:
 **ControlTowerTest** + **RoverTest**
 
 Also, there are a couple of utility classes which are used to read the input file and to drive the main class which prints out to the console.
@@ -50,17 +48,19 @@ The driving solution algorithm is pretty straight forward.
 
  1. A ControlTower is built and it immediately starts communications with external file input, "Earth".
  2. The ControlTower then deploys the number of Rovers.
- 3. The ControlTower then commands the Rovers to execute the stored commands.
+ 3. The ControlTower then commands the Rovers to execute the stored commands in a rover-sequential approach.
 
-The fun part of this problem was figuring how to map the directions and the corresponding calculations. For example if the Rover must move north then that means to add the current position (x,y) of the rover with the north movement coordinate map (0,1).
+The fun part of this problem was figuring how to map the directions and the corresponding calculations. For example if the Rover must move north then that means to add the current position (x,y) of the rover with the north movement coordinate map (0,1). This was achieved by storing an array with coordinates use for the move calculations and a corresponding array which maps to those coordinates by matching index (arrays of same size). 
 
-## Running The Solution
-In the resources directory there exists:
+### Running The Solution
+In the resources directory of the java project there exists the following files:
 
  1. MarsRovers.jar
  2. inputFile.txt
  3. runSolution.sh
 
-Execute the runSolution.sh and see that the the application yields the expected output.
+Execute the runSolution.sh and see that the the application yields the expected output for the provided input. Please use the input file naming convention, inputFile.txt. The 3 files should be in the same directory for the application to work as intended and yield the calculations.
+
+
 
 ```
