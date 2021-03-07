@@ -62,5 +62,14 @@ In the resources directory of the java project there exists the following files:
 Execute the runSolution.sh and see that the the application yields the expected output for the provided input. Please use the input file naming convention, inputFile.txt. The 3 files should be in the same directory for the application to work as intended and yield the calculations.
 
 
+## Running The Solution
+In the resources directory there exists:
 
-```
+ 1. MarsRovers.jar - contains the compiled logic
+ 2. inputFile.txt - contains the input data which is being process and tested
+ 3. runSolution.sh - executable file which drives the main class and provides a System path to the inputFile.txt
+
+Running the application is as easy as executing the .sh file.
+
+    ./runSolution.sh
+
