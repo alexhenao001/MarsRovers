@@ -53,16 +53,6 @@ The driving solution algorithm is pretty straight forward.
 The fun part of this problem was figuring how to map the directions and the corresponding calculations. For example if the Rover must move north then that means to add the current position (x,y) of the rover with the north movement coordinate map (0,1). This was achieved by storing an array with coordinates use for the move calculations and a corresponding array which maps to those coordinates by matching index (arrays of same size). 
 
 ### Running The Solution
-In the resources directory of the java project there exists the following files:
-
- 1. MarsRovers.jar
- 2. inputFile.txt
- 3. runSolution.sh
-
-Execute the runSolution.sh and see that the the application yields the expected output for the provided input. Please use the input file naming convention, inputFile.txt. The 3 files should be in the same directory for the application to work as intended and yield the calculations.
-
-
-## Running The Solution
 In the resources directory there exists:
 
  1. MarsRovers.jar - contains the compiled logic
@@ -74,3 +64,4 @@ Running the application is as easy as executing the .sh file.
     ./runSolution.sh
 
 If all three files are in the same directory the executible .sh file will run the application with the inputFile.txt data. 
+
