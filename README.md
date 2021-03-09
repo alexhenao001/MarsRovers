@@ -56,7 +56,7 @@ The fun part of this problem was figuring how to map the directions and the corr
 In the resources directory there exists:
 
  1. MarsRovers.jar - contains the compiled logic
- 2. inputFile.txt - contains the input data which is being process and tested
+ 2. inputFile.txt - contains the input data which is being processed and tested
  3. runSolution.sh - executable file which drives the main class and provides a System path to the inputFile.txt
 
 Running the application is as easy as executing the .sh file.
