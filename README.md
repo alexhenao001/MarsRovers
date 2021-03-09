@@ -12,7 +12,7 @@ The first steps in designing the solution were to understand the problem and und
 
 Most of the time in this project was spent whiteboarding the necessary classes, methods, and algorithms to fullfil the requirements. Unit tests were created before the logic was added to the core classes of the project.
 
-The unit tests allowed the implemenation phase to follow a direction/track to stay on and ensure that the different areas of the code had proepr coverage. Sublte changes to the mplementation were made apparent because tests which were passing began to fail. This again ensured that we would not lose functionality and stayed on track to writing the code necessary to cover the problem requirements which were whiteboarded.
+The unit tests allowed the implemenation phase to follow a direction/track to stay on and ensure that the different areas of the code had proper coverage. Subtle changes to the implementation were made apparent because tests which were passing began to fail. This again ensured that we would not lose functionality and stayed on track to writing the code necessary to cover the problem requirements which were whiteboarded.
 
 ## Assumptions
 The application solutions assume that the data provided in the file is sound and structured as the problem describes. This assumption also includes that for every Rover data line in the input file there is a corresponding command data line.
