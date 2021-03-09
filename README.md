@@ -50,7 +50,7 @@ The driving solution algorithm is pretty straight forward.
  2. The ControlTower then deploys the number of Rovers.
  3. The ControlTower then commands the Rovers to execute the stored commands in a rover-sequential approach.
 
-The fun part of this problem was figuring how to map the directions and the corresponding calculations. For example if the Rover must move north then that means to add the current position (x,y) of the rover with the north movement coordinate map (0,1). This was achieved by storing an array with coordinates use for the move calculations and a corresponding array which maps to those coordinates by matching index (arrays of same size). 
+The fun part of this problem was figuring how to map the directions and the corresponding calculations. For example if the Rover must move north then that means to add the current position (x,y) of the rover with the north movement coordinate map (0,1). This was achieved by storing an array with coordinates used for the move calculations and a corresponding array which maps to those coordinates by matching indexes (arrays of same size). 
 
 # Running The Solution
 In the resources directory there exists:
